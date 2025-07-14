@@ -7,10 +7,6 @@
     "commands": [
       "ng update @angular/core@18 @angular/cli@18 --force"
     ],
-    "fileFilters": [
-      "package.json",
-      "package-lock.json"
-    ],
     "executionMode": "update"
   }
 }
