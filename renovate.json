@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "allowedCommands": ["ng update @angular/core@18 @angular/cli@18 --force$","^ng .*$","ng update","ng","^ng [a-z]+$ --[a-z]+$","^ng update @angular/[a-z-]+@[\\d\\.]+ @angular/[a-z-]+@[\\d\\.]+ --[a-z-]+$"],
+  "postUpgradeTasks": {
+    "commands": ["ng update @angular/core@18 @angular/cli@18 --force"],
+    "executionMode": "branch" 
+  }
+}
